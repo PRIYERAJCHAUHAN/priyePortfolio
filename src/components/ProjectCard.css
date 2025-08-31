@@ -1,0 +1,81 @@
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  object-fit: cover;
+  max-height: 200px;
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap; /* important for wrapping on small screens */
+  gap: 5px; /* spacing between tags */
+  margin-bottom: 0.8rem;
+}
+
+.project-tags span {
+  background: var(--primary);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap; /* wrap buttons on small screens */
+  gap: 5px; /* spacing between buttons */
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+.project-links a.details {
+  background: var(--primary);
+}
+
+.project-links a.demo {
+  background: var(--secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 0.8rem;
+  }
+  .project-tags span {
+    font-size: 0.75rem;
+    padding: 2px 6px;
+  }
+  .project-links a {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+  }
+}

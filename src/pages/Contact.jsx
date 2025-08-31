@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Contact.css"; // Add this new CSS file
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -20,16 +21,9 @@ export default function Contact() {
   };
 
   return (
-    <div className="container" style={{ padding: "2rem 0" }}>
+    <div className="contact-container">
       <h2>Contact Me</h2>
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          maxWidth: "400px",
-        }}
-      >
+      <form onSubmit={handleSubmit}>
         <label>Name:</label>
         <input
           type="text"
@@ -37,7 +31,6 @@ export default function Contact() {
           value={formData.name}
           onChange={handleChange}
           required
-          style={{ padding: "0.5rem", marginBottom: "1rem" }}
         />
 
         <label>Email:</label>
@@ -47,7 +40,6 @@ export default function Contact() {
           value={formData.email}
           onChange={handleChange}
           required
-          style={{ padding: "0.5rem", marginBottom: "1rem" }}
         />
 
         <label>Message:</label>
@@ -56,21 +48,9 @@ export default function Contact() {
           value={formData.message}
           onChange={handleChange}
           required
-          style={{ padding: "0.5rem", marginBottom: "1rem" }}
         />
 
-        <button
-          type="submit"
-          style={{
-            background: "var(--primary)",
-            color: "#fff",
-            border: "none",
-            padding: "0.5rem 1rem",
-            borderRadius: "5px",
-          }}
-        >
-          Send Message
-        </button>
+        <button type="submit">Send Message</button>
       </form>
     </div>
   );

@@ -3,8 +3,8 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import ProjectCard from "../components/ProjectCard";
+import "./Home.css"; // New CSS
 
-// Projects with images and demo links
 const projects = [
   {
     id: 1,
@@ -34,26 +34,14 @@ const projects = [
 
 export default function Home() {
   return (
-    <div className="container">
-      {/* Hero Section */}
+    <div className="home-container">
       <Hero />
-
-      {/* About Section */}
       <About />
-
-      {/* Skills Section */}
       <Skills />
 
-      {/* Projects Section */}
-      <section style={{ padding: "2rem 0" }}>
-        <h2 style={{ marginBottom: "1.5rem" }}>My Projects</h2>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "1.5rem",
-          }}
-        >
+      <section className="projects-section">
+        <h2>My Projects</h2>
+        <div className="projects-grid">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

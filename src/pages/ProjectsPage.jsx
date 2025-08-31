@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
+import "./ProjectsPage.css"; // New CSS
 
 const projects = [
   {
@@ -36,23 +37,20 @@ export default function ProjectsPage() {
   );
 
   return (
-    <div className="container" style={{ padding: "2rem 0" }}>
+    <div className="projects-page-container">
       <h2>All Projects</h2>
       <input
         type="text"
         placeholder="Search projects..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        style={{
-          padding: "0.5rem",
-          width: "100%",
-          maxWidth: "400px",
-          marginBottom: "1rem",
-        }}
+        className="project-search"
       />
-      {filteredProjects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
+      <div className="projects-list">
+        {filteredProjects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
     </div>
   );
 }

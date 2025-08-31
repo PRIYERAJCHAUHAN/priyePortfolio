@@ -1,4 +1,5 @@
 import React from "react";
+import "./Resume.css"; // New CSS
 
 export default function Resume() {
   const handlePrint = () => {
@@ -6,35 +7,27 @@ export default function Resume() {
   };
 
   return (
-    <div className="container" style={{ padding: "2rem 0" }}>
+    <div className="resume-container">
       <h2>My Resume</h2>
-      <button
-        onClick={handlePrint}
-        style={{
-          background: "var(--primary)",
-          color: "#fff",
-          border: "none",
-          padding: "0.5rem 1rem",
-          borderRadius: "5px",
-          cursor: "pointer",
-          marginBottom: "1rem",
-        }}
-      >
+      <button onClick={handlePrint} className="print-btn">
         Print / Save as PDF
       </button>
 
-      <section style={{ border: "1px solid #ddd", padding: "1rem" }}>
+      <section className="resume-content">
         <h3>Priye Raj</h3>
         <p>Email: priyeraj@example.com</p>
         <p>Phone: +91 12345 67890</p>
+
         <h4>Skills</h4>
         <ul>
           <li>JavaScript, React.js, Node.js, MongoDB</li>
           <li>HTML, CSS</li>
           <li>Express.js, RESTful APIs</li>
         </ul>
+
         <h4>Experience</h4>
         <p>Quality Analyst at Provana India Private LTD</p>
+
         <h4>Projects</h4>
         <ul>
           <li>E-commerce Website</li>
