@@ -4,12 +4,12 @@ import { useParams, Link } from "react-router-dom";
 const projects = [
   {
     id: 1,
-    title: "E-commerce Website",
+    title: "Wanderlust",
     description:
-      "A full-stack e-commerce app using React, Node.js, and MongoDB. Features include product management, shopping cart, and payment integration.",
+      "A Wanderlust app using React, Node.js, and MongoDB. Features include product management, shopping cart, and payment integration.",
     tags: ["React", "Node.js", "MongoDB"],
     demo: "#",
-    image: "/assets/projects/ecommerce.png",
+    image: "/assets/projects/wanderlust.png",
   },
   {
     id: 2,
@@ -22,12 +22,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Blog Platform",
+    title: "Weather App",
     description:
-      "A blogging platform built with Node.js and Express. Users can create, edit, and delete posts.",
+      "A weather app built with Node.js and Express. Users can check weather of anywhere.",
     tags: ["Node.js", "Express", "MongoDB"],
     demo: "#",
-    image: "/assets/projects/blog.png",
+    image: "/assets/projects/weather.jpg",
   },
 ];
 

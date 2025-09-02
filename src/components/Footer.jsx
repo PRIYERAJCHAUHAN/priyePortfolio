@@ -13,14 +13,14 @@ export default function Footer() {
           Email
         </a>
         <a
-          href="https://github.com/priyeraj"
+          href="https://github.com/PRIYERAJCHAUHAN"
           target="_blank"
           rel="noreferrer"
         >
           GitHub
         </a>
         <a
-          href="https://linkedin.com/in/priyeraj"
+          href="https://www.linkedin.com/in/priye-raj-511638140/"
           target="_blank"
           rel="noreferrer"
         >
