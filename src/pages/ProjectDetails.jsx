@@ -17,7 +17,7 @@ const projects = [
     description:
       "My personal portfolio built with React to showcase projects, skills, and contact information.",
     tags: ["React", "CSS"],
-    demo: "#",
+    demo: "https://thriving-boba-1adc5d.netlify.app/",
     image: "/assets/projects/portfolio.png",
   },
   {
